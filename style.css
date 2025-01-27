@@ -1,0 +1,41 @@
+.profile-picture{
+  width: 256px;
+  border-radius: 128px;
+}
+
+.list-inline {
+  display: flex;
+  list-style-type: none;
+  gap: 24px;
+}
+
+.container {
+  display: grid;
+  padding: 8px;
+  margin: 64px;
+  border-radius: 8px;
+  color: white;
+}
+.lewagon-link {
+  background: darkgray;
+  border-radius: 8px;
+  padding: 12px;
+}
+.card {
+  padding: 24px;
+  margin: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  border-radius: 8px;
+  background-image: url(https://as1.ftcdn.net/v2/jpg/05/95/40/98/1000_F_595409805_iqaQle7sEXvHDjoDECdOJobGKW0bMUd9.jpg);
+  text-align: center;
+  align-items: center;
+  border: solid 4px, #e2a488;
+}
+
+body {
+  background-image: url(https://st5.depositphotos.com/86067018/71624/v/450/depositphotos_716246370-stock-illustration-tokyo-coloring-book-illustration-outline.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
