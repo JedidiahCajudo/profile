@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222222; /* dark gray background */
+/* light text color */
+}
+
+h1 {
+  font-family: 'Merriweather', serif; /* Use the font for the h1 */
+  color: #eeeee6;
+}
+
+h3 {
+  font-family: 'Roboto Flex', sans-serif;
+  text-transform: uppercase; /* Uppercase for h2 */
+  color: #eeeee6;
+}
+
+p {
+  font-family: 'Roboto Flex', sans-serif;
+  color: #aba9a8;
+}
