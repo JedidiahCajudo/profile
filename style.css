@@ -1,36 +1,39 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #222222; /* dark gray background */
+  font-family: Arial, sans-serif; /* Sets the default font for the whole page to Arial with a sans-serif fallback */
+  background-color: #222222; /* Dark gray background for the whole page */
 }
 
 .container {
-  display: flex;
+  display: flex; /* Enables flexbox layout for child elements, useful for horizontal alignment */
+}
+
+.profile-photo {
+  display: flex; /* Uses flexbox to align the profile image or any content inside horizontally */
 }
 
 .profile-photo img {
-  width: 24vh;
-  height: 40vw;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 1vh;
-  margin: 1vh;
-  border: 8px #c0bfbb;
+  width: 24vh; /* Image width is 24% of the viewport height */
+  height: 40vw; /* Image height is 40% of the viewport width */
+  object-fit: cover; /* Scales the image to fill the container without distortion, cropping if necessary */
+  object-position: top; /* Focuses the top part of the image inside its container */
+  border-radius: 1vh; /* Rounds the corners of the image slightly using viewport height units */
+  margin: 1vh; /* Adds spacing around the image */
+  border: 2px solid #c0bfbb; /* Adds a solid border around the image in light gray */
 }
 
-
 h1 {
-  font-family: 'Merriweather', serif; /* Use the font for the h1 */
-  color: #eeeee6;
+  font-family: 'Merriweather', serif; /* Sets a serif font specifically for the main headline */
+  color: #eeeee6; /* Off-white color for the h1 text */
 }
 
 h3 {
-  font-family: 'Roboto Flex', sans-serif;
-  text-transform: uppercase; /* Uppercase for h2 */
-  color: #eeeee6;
+  font-family: 'Roboto Flex', sans-serif; /* Sets a modern, flexible sans-serif font for h3 */
+  text-transform: uppercase; /* Converts all h3 text to uppercase */
+  color: #eeeee6; /* Off-white color for the h3 text */
 }
 
 p {
-  font-family: 'Roboto Flex', sans-serif;
-  color: #c0bfbb; /* light gray text */
-  font-size: 1.6vh;
+  font-family: 'Roboto Flex', sans-serif; /* Applies the same sans-serif font to paragraph text */
+  color: #c0bfbb; /* Light gray color for paragraph text */
+  font-size: 1.6vh; /* Font size is 1.6% of the viewport height for responsive sizing */
 }
