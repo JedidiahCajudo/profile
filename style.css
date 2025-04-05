@@ -17,12 +17,12 @@ body {
   object-fit: cover; /* Scales the image to fill the container without distortion, cropping if necessary */
   object-position: top; /* Focuses the top part of the image inside its container */
   border-radius: 1vh; /* Rounds the corners of the image slightly using viewport height units */
-  margin: 1vh; /* Adds spacing around the image */
-  border: 2px solid #c0bfbb; /* Adds a solid border around the image in light gray */
+  margin: 0.4vh; /* Adds spacing around the image */
 }
 
 h1 {
-  font-family: 'Merriweather', serif; /* Sets a serif font specifically for the main headline */
+  font-family: "Playwrite MX Guides", cursive; /* Sets a cursive font for h1 elements */
+  font-weight: normal; /* Normal font weight for the h1 text */
   color: #eeeee6; /* Off-white color for the h1 text */
 }
 
@@ -33,7 +33,7 @@ h3 {
 }
 
 p {
-  font-family: 'Roboto Flex', sans-serif; /* Applies the same sans-serif font to paragraph text */
+  font-family: 'Merriweather', serif; /* Applies the same sans-serif font to paragraph text */
   color: #c0bfbb; /* Light gray color for paragraph text */
   font-size: 1.6vh; /* Font size is 1.6% of the viewport height for responsive sizing */
 }
