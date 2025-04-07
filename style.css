@@ -3,7 +3,7 @@ body {
   background-color: #222222; /* Dark gray background for the whole page */
 }
 
-.container {
+.homepage {
   display: flex; /* Enables flexbox layout for child elements, useful for horizontal alignment */
 }
 
