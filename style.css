@@ -88,11 +88,12 @@ p, .navbar .links a {
   margin: 0.4vh; /* Adds a small margin around the images */
   transition: width 1s ease, filter 0.3s ease; /* Smoothly transitions the width on hover */
   cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
+  filter: grayscale(100%); /* Starts with the image in grayscale */
 }
 
 .photo-links img:hover {
   width: 72vh; /* Increases the width of the image to 64% of the viewport height on hover */
-  filter: grayscale(100%); /* Applies the grayscale filter on hover */
+  filter: grayscale(0%); /* Applies the grayscale filter on hover */
 }
 
 .hello {
