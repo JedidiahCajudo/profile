@@ -80,7 +80,7 @@ p, .navbar .links a {
 }
 
 .photo-links img {
-  width: 24vh; /* Sets the width of the images to 24% of the viewport height */
+  width: 16vh; /* Sets the width of the images to 24% of the viewport height */
   height: 40vw; /* Sets the height of the images to 32% of the viewport width */
   object-fit: cover; /* Ensures the images cover the area while maintaining aspect ratio */
   object-position: top; /* Aligns the image to the top of the container */
