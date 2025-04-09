@@ -40,7 +40,13 @@ p, .navbar .links a {
 .navbar .links a {
   text-decoration: none; /* Removes underline from the links */
   padding-right: 1.6vh; /* Adds padding to the right of the links */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
 }
+
+.navbar .links a:hover {
+  transform: scale(1.2); /* Scales the link on hover */
+}
+
 
 .navbar .icons {
   position: absolute; /* Positions the icons container absolutely within the navbar */
@@ -55,13 +61,12 @@ p, .navbar .links a {
   margin: 0.8vh 0; /* Adds vertical space between each icon */
   cursor: pointer; /* Changes the cursor to a pointer when hovering over icons */
   padding-left: 1.6vh; /* Adds padding to the left of the icons */
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
 }
 
-.icons i:hover {
-  color: #eeeee6; /* Changes the color of the icons on hover */
-  animation: rotateOnce 0.6s ease-in-out 1; /* Rotates the icons once on hover with smooth animation */
+.navbar .icons i:hover {
+  transform: scale(1.2); /* Scales the icon on hover */
 }
-
 
 .homepage {
   display: flex; /* Uses flexbox for layout of the homepage */
@@ -91,7 +96,6 @@ p, .navbar .links a {
 .hello {
   margin-left: 2vw; /* Adds left margin to the "hello" text */
 }
-
 
 
 .vertical-line {
