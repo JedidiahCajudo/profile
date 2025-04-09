@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, sans-serif; /* Sets the default font for the whole page to Arial with a sans-serif fallback */
-  background-color: #222222; /* Dark gray background for the whole page */
+  background-color: #333333; /* Dark gray background for the whole page */
+  color: #eeeee6; /* Light gray text color for the whole page */
 }
 
 .homepage {
@@ -14,34 +14,32 @@ body {
 }
 
 .photo-links img {
-  width: 24vh; /* Sets the width to 12% of the viewport height */
-  height: 32vw; /* Sets the height to 40% of the viewport width */
-  object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
-  object-position: top; /* Ensures the image covers the area while maintaining aspect ratio */
+  width: 24vh; /* Sets the width of the image to 24% of the viewport height */
+  height: 32vw; /* Sets the height of the image to 32% of the viewport width */
+  object-fit: cover; /* 👈 Changed from 'cover' to 'contain' */
+  object-position: top; /* Aligns the image to the top */
   border-radius: 1vh; /* Rounds the corners of the image */
-  margin: 0.4vh; /* Adds a margin around the image */
-  transition: width 0.4s ease;  /* Smooth transition for width change */
+  margin: 0.4vh; /* Adds a small margin around the image */
+  transition: width 0.4s ease; /* Smooth transition for width change */
   cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
 }
 
 .photo-links img:hover {
-  width: 64vh; /* Only the width expands */
+  width: 64vh; /* Increases the width of the image on hover */
 }
 
 .hello {
-  margin-left: 2vw;
+  margin-left: 2vw; /* Adds left margin to the hello text */
 }
 
 h1 {
   font-family: "Playwrite MX Guides", cursive; /* Sets a cursive font for h1 elements */
-  font-weight: normal; /* Normal font weight for the h1 text */
-  color: #eeeee6; /* Off-white color for the h1 text */
+  font-weight: normal; /* Normal font weight for the h1 text */ /* Off-white color for the h1 text */
 }
 
 h3 {
   font-family: 'Roboto Flex', sans-serif; /* Sets a modern, flexible sans-serif font for h3 */
   text-transform: uppercase; /* Converts all h3 text to uppercase */
-  color: #eeeee6; /* Off-white color for the h3 text */
 }
 
 p {
@@ -50,11 +48,7 @@ p {
   font-size: 1.6vh; /* Font size is 1.6% of the viewport height for responsive sizing */
 }
 
-body {
-  margin: 0;
-  padding:0;
-  background: #262626;
-}
+
 /* This woks if the icons are <i> elements */
 @keyframes rotateOnce {
   from {
@@ -66,6 +60,6 @@ body {
 }
 
 .icons i:hover {
-  color: #fff;
+  color: #eeeee6;
   animation: rotateOnce 0.6s ease-in-out 1; /* Smooth 1-time rotation */
 }
