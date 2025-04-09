@@ -3,6 +3,13 @@ body {
   color: #eeeee6; /* Light gray text color for the whole page */
 }
 
+.navbar {
+  position: fixed; /* Fixes the navbar at the top of the page */
+  right: 0; /* Positions it on the right side of the screen */
+  width: 8vh; /* Fixes the navbar at the top of the page */
+
+}
+
 .homepage {
   display: flex; /* Uses flexbox for layout */
   align-items: center; /* Aligns items vertically in the center */
