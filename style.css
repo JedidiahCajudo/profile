@@ -22,7 +22,7 @@ p, .navbar .links a {
 }
 
 .navbar {
-  position: fixed; /* Fixes the navbar in place, so it stays on the screen */
+  position: fixed; /* Fixes the navbar in place */
   right: 0; /* Positions the navbar on the right side of the screen */
   width: 8vh; /* Set the width of the navbar to 8% of the viewport height */
   height: 100vh; /* Full height of the viewport */
@@ -41,7 +41,7 @@ p, .navbar .links a {
 .navbar .links a {
   text-decoration: none; /* Removes underline from the links */
   padding-right: 1.6vh; /* Adds padding to the right of the links */
-  transition: color 0.3s ease /* Smooth color and background transitions */
+  transition: color 0.2s ease; /* Smooth color transition */
 }
 
 .navbar .links a:hover {
@@ -61,7 +61,7 @@ p, .navbar .links a {
   font-size: 3.2vh; /* Set the font size of the icons to 2% of the viewport height */
   margin: 0.8vh 0; /* Adds vertical space between each icon */
   cursor: pointer; /* Changes the cursor to a pointer when hovering over icons */
-  transition: color 0.3s ease /* Smooth color and background transitions */
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .navbar .icons i:hover {
@@ -80,26 +80,25 @@ p, .navbar .links a {
 }
 
 .photo-links img {
-  width: 16vh; /* Sets the width of the images to 24% of the viewport height */
-  height: 40vw; /* Sets the height of the images to 32% of the viewport width */
+  width: 32vh; /* Sets the width of the images to 16% of the viewport height */
+  height: 40vw; /* Sets the height of the images to 40% of the viewport width */
   object-fit: cover; /* Ensures the images cover the area while maintaining aspect ratio */
   object-position: top; /* Aligns the image to the top of the container */
   border-radius: 1vh; /* Rounds the corners of the images */
   margin: 0.4vh; /* Adds a small margin around the images */
-  transition: width 1s ease, filter 0.3s ease; /* Smoothly transitions the width on hover */
+  transition: width 0.8s ease, filter 1.6s ease, transform 0.8s ease; /* Smoothly transitions the width and filter on hover */
   cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
   filter: grayscale(100%); /* Starts with the image in grayscale */
 }
 
 .photo-links img:hover {
-  width: 72vh; /* Increases the width of the image to 64% of the viewport height on hover */
-  filter: grayscale(0%); /* Applies the grayscale filter on hover */
+  width: 72vh; /* Increases the width of the image on hover */
+  filter: grayscale(0%); /* Removes the grayscale on hover */
 }
 
 .hello {
   margin-left: 2vw; /* Adds left margin to the "hello" text */
 }
-
 
 .vertical-line {
   position: fixed; /* Fixes the line's position on the page */
