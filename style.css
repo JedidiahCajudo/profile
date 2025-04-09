@@ -47,6 +47,7 @@ p, .navbar .links a {
   bottom: 16vh; /* Positions the icons 16vh from the bottom of the navbar */
   display: flex; /* Uses flexbox layout for the icons */
   flex-direction: column; /* Stacks the icons vertically */
+  align-items: center;
 }
 
 .navbar .icons i {
@@ -55,6 +56,12 @@ p, .navbar .links a {
   cursor: pointer; /* Changes the cursor to a pointer when hovering over icons */
   padding-left: 1.6vh; /* Adds padding to the left of the icons */
 }
+
+.icons i:hover {
+  color: #eeeee6; /* Changes the color of the icons on hover */
+  animation: rotateOnce 0.6s ease-in-out 1; /* Rotates the icons once on hover with smooth animation */
+}
+
 
 .homepage {
   display: flex; /* Uses flexbox for layout of the homepage */
@@ -85,7 +92,13 @@ p, .navbar .links a {
   margin-left: 2vw; /* Adds left margin to the "hello" text */
 }
 
-.icons i:hover {
-  color: #eeeee6; /* Changes the color of the icons on hover */
-  animation: rotateOnce 0.6s ease-in-out 1; /* Rotates the icons once on hover with smooth animation */
+
+
+.vertical-line {
+  position: fixed; /* Fixes the line's position on the page */
+  right: 4.8vh; /* Aligns the line to the right side of the window */
+  bottom: 0; /* Positions the line at the bottom of the window */
+  width: 0.8vh; /* Set the width of the line */
+  height: 6vh; /* Sets the height of the line (adjust to your preference) */
+  background-color: #eeeee6; /* Line color, same as the text */
 }
