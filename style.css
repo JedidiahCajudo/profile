@@ -7,6 +7,7 @@ body {
 h1 {
   font-family: "Playwrite MX Guides", cursive; /* Custom cursive font for h1 elements */
   font-weight: normal; /* Normal font weight for h1 */
+  font-size: 8vh; /* Font size is based on the viewport height for responsive sizing */
 }
 
 h3 {
@@ -16,7 +17,7 @@ h3 {
 
 p, .navbar .links a {
   color: #c0bfbb; /* Light gray color for paragraph text and links */
-  font-size: 1.6vh; /* Font size is based on the viewport height for responsive sizing */
+  font-size: 2.4vh; /* Font size is based on the viewport height for responsive sizing */
   margin: 1.6vh 0; /* Adds vertical space between paragraphs and links */
 }
 
@@ -40,13 +41,12 @@ p, .navbar .links a {
 .navbar .links a {
   text-decoration: none; /* Removes underline from the links */
   padding-right: 1.6vh; /* Adds padding to the right of the links */
-  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  transition: color 0.3s ease /* Smooth color and background transitions */
 }
 
 .navbar .links a:hover {
-  transform: scale(1.2); /* Scales the link on hover */
+  color: #5DADE2; /* Changes the link color to a light blue on hover */
 }
-
 
 .navbar .icons {
   position: absolute; /* Positions the icons container absolutely within the navbar */
@@ -54,22 +54,23 @@ p, .navbar .links a {
   display: flex; /* Uses flexbox layout for the icons */
   flex-direction: column; /* Stacks the icons vertically */
   align-items: center;
+  padding-left: 1.6vh; /* Adds padding to the left of the icons */
 }
 
 .navbar .icons i {
-  font-size: 2vh; /* Set the font size of the icons to 2% of the viewport height */
+  font-size: 3.2vh; /* Set the font size of the icons to 2% of the viewport height */
   margin: 0.8vh 0; /* Adds vertical space between each icon */
   cursor: pointer; /* Changes the cursor to a pointer when hovering over icons */
-  padding-left: 1.6vh; /* Adds padding to the left of the icons */
-  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  transition: color 0.3s ease /* Smooth color and background transitions */
 }
 
 .navbar .icons i:hover {
-  transform: scale(1.2); /* Scales the icon on hover */
+  color: #5DADE2; /* Changes the icon color to a light blue on hover */
 }
 
 .homepage {
   display: flex; /* Uses flexbox for layout of the homepage */
+  height: 100vh; /* Full height of the viewport */
   align-items: center; /* Aligns homepage items vertically in the center */
   justify-content: center; /* Centers homepage items horizontally */
 }
@@ -79,18 +80,20 @@ p, .navbar .links a {
 }
 
 .photo-links img {
-  width: 24vh; /* Sets the width of the images to 24% of the viewport height */
-  height: 32vw; /* Sets the height of the images to 32% of the viewport width */
+  width: 16vh; /* Sets the width of the images to 24% of the viewport height */
+  height: 40vw; /* Sets the height of the images to 32% of the viewport width */
   object-fit: cover; /* Ensures the images cover the area while maintaining aspect ratio */
   object-position: top; /* Aligns the image to the top of the container */
   border-radius: 1vh; /* Rounds the corners of the images */
   margin: 0.4vh; /* Adds a small margin around the images */
-  transition: width 0.4s ease; /* Smoothly transitions the width on hover */
+  transition: width 1s ease, filter 0.3s ease; /* Smoothly transitions the width on hover */
   cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
+  filter: grayscale(100%); /* Starts with the image in grayscale */
 }
 
 .photo-links img:hover {
-  width: 64vh; /* Increases the width of the image to 64% of the viewport height on hover */
+  width: 72vh; /* Increases the width of the image to 64% of the viewport height on hover */
+  filter: grayscale(0%); /* Applies the grayscale filter on hover */
 }
 
 .hello {
@@ -100,7 +103,7 @@ p, .navbar .links a {
 
 .vertical-line {
   position: fixed; /* Fixes the line's position on the page */
-  right: 4.8vh; /* Aligns the line to the right side of the window */
+  right: 4vh; /* Aligns the line to the right side of the window */
   bottom: 0; /* Positions the line at the bottom of the window */
   width: 0.8vh; /* Set the width of the line */
   height: 6vh; /* Sets the height of the line (adjust to your preference) */
