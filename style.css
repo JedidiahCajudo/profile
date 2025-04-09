@@ -41,11 +41,11 @@ p, .navbar .links a {
 .navbar .links a {
   text-decoration: none; /* Removes underline from the links */
   padding-right: 1.6vh; /* Adds padding to the right of the links */
-  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  transition: color 0.3s ease /* Smooth color and background transitions */
 }
 
 .navbar .links a:hover {
-  transform: scale(1.2); /* Scales the link on hover */
+  color: #5DADE2; /* Changes the link color to a light blue on hover */
 }
 
 .navbar .icons {
@@ -54,18 +54,18 @@ p, .navbar .links a {
   display: flex; /* Uses flexbox layout for the icons */
   flex-direction: column; /* Stacks the icons vertically */
   align-items: center;
+  padding-left: 1.6vh; /* Adds padding to the left of the icons */
 }
 
 .navbar .icons i {
   font-size: 3.2vh; /* Set the font size of the icons to 2% of the viewport height */
   margin: 0.8vh 0; /* Adds vertical space between each icon */
   cursor: pointer; /* Changes the cursor to a pointer when hovering over icons */
-  padding-left: 1.6vh; /* Adds padding to the left of the icons */
-  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  transition: color 0.3s ease /* Smooth color and background transitions */
 }
 
 .navbar .icons i:hover {
-  transform: scale(1.2); /* Scales the icon on hover */
+  color: #5DADE2; /* Changes the icon color to a light blue on hover */
 }
 
 .homepage {
@@ -86,12 +86,13 @@ p, .navbar .links a {
   object-position: top; /* Aligns the image to the top of the container */
   border-radius: 1vh; /* Rounds the corners of the images */
   margin: 0.4vh; /* Adds a small margin around the images */
-  transition: width 0.4s ease; /* Smoothly transitions the width on hover */
+  transition: width 1s ease, filter 0.3s ease; /* Smoothly transitions the width on hover */
   cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
 }
 
 .photo-links img:hover {
   width: 72vh; /* Increases the width of the image to 64% of the viewport height on hover */
+  filter: grayscale(100%); /* Applies the grayscale filter on hover */
 }
 
 .hello {
