@@ -68,6 +68,11 @@ p, .navbar .links a {
   color: #5DADE2; /* Changes the icon color to a light blue on hover */
 }
 
+.icons a {
+  color: inherit; /* Inherits the color from the parent element */
+  text-decoration: none; /* Removes underline from the links */
+}
+
 .homepage {
   display: flex; /* Uses flexbox for layout of the homepage */
   height: 100vh; /* Full height of the viewport */
