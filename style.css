@@ -17,7 +17,7 @@ h3 {
 
 p, .navbar .links a {
   color: #c0bfbb; /* Light gray color for paragraph text and links */
-  font-size: 1.6vh; /* Font size is based on the viewport height for responsive sizing */
+  font-size: 2.4vh; /* Font size is based on the viewport height for responsive sizing */
   margin: 1.6vh 0; /* Adds vertical space between paragraphs and links */
 }
 
@@ -58,7 +58,7 @@ p, .navbar .links a {
 }
 
 .navbar .icons i {
-  font-size: 2vh; /* Set the font size of the icons to 2% of the viewport height */
+  font-size: 3.2vh; /* Set the font size of the icons to 2% of the viewport height */
   margin: 0.8vh 0; /* Adds vertical space between each icon */
   cursor: pointer; /* Changes the cursor to a pointer when hovering over icons */
   padding-left: 1.6vh; /* Adds padding to the left of the icons */
@@ -102,7 +102,7 @@ p, .navbar .links a {
 
 .vertical-line {
   position: fixed; /* Fixes the line's position on the page */
-  right: 4.8vh; /* Aligns the line to the right side of the window */
+  right: 4vh; /* Aligns the line to the right side of the window */
   bottom: 0; /* Positions the line at the bottom of the window */
   width: 0.8vh; /* Set the width of the line */
   height: 6vh; /* Sets the height of the line (adjust to your preference) */
