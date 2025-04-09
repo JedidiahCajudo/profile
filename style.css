@@ -12,13 +12,20 @@ body {
 }
 
 .photo-links img {
-  width: 24vh; /* Image width is 24% of the viewport height */
-  height: 40vw; /* Image height is 40% of the viewport width */
-  object-fit: cover; /* Scales the image to fill the container without distortion, cropping if necessary */
-  object-position: top; /* Focuses the top part of the image inside its container */
-  border-radius: 1vh; /* Rounds the corners of the image slightly using viewport height units */
-  margin: 0.4vh; /* Adds spacing around the image */
+  width: 8vh; /* Sets the width to 12% of the viewport height */
+  height: 40vw; /* Sets the height to 40% of the viewport width */
+  object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+  object-position: top; /* Ensures the image covers the area while maintaining aspect ratio */
+  border-radius: 1vh; /* Rounds the corners of the image */
+  margin: 0.4vh; /* Adds a margin around the image */
+  transition: width 0.4s ease;  /* Smooth transition for width change */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
 }
+
+.photo-links img:hover {
+  width: 32vh; /* Only the width expands */
+}
+
 
 h1 {
   font-family: "Playwrite MX Guides", cursive; /* Sets a cursive font for h1 elements */
