@@ -1,72 +1,91 @@
 body {
-  background-color: #333333; /* Dark gray background for the whole page */
-  color: #eeeee6; /* Light gray text color for the whole page */
+  background-color: #333333; /* Dark gray background for the entire page */
+  color: #eeeee6; /* Light gray text color for the body */
+  font-family: 'Merriweather', serif; /* Default font for the body text */
+}
+
+h1 {
+  font-family: "Playwrite MX Guides", cursive; /* Custom cursive font for h1 elements */
+  font-weight: normal; /* Normal font weight for h1 */
+}
+
+h3 {
+  font-family: 'Roboto Flex', sans-serif; /* Modern sans-serif font for h3 */
+  text-transform: uppercase; /* Makes h3 text uppercase */
+}
+
+p, .navbar .links a {
+  color: #c0bfbb; /* Light gray color for paragraph text and links */
+  font-size: 1.6vh; /* Font size is based on the viewport height for responsive sizing */
+  margin: 1.6vh 0; /* Adds vertical space between paragraphs and links */
 }
 
 .navbar {
-  position: fixed; /* Fixes the navbar at the top of the page */
-  right: 0; /* Positions it on the right side of the screen */
-  width: 8vh; /* Fixes the navbar at the top of the page */
+  position: fixed; /* Fixes the navbar in place, so it stays on the screen */
+  right: 0; /* Positions the navbar on the right side of the screen */
+  width: 8vh; /* Set the width of the navbar to 8% of the viewport height */
+  height: 100vh; /* Full height of the viewport */
+  display: flex; /* Enables flexbox layout for the navbar */
+  flex-direction: column; /* Stacks navbar items (links and icons) vertically */
+  margin-top: 8vh; /* Adds space between the top of the page and the navbar */
+}
 
+.navbar .links {
+  display: flex; /* Uses flexbox for layout of the links */
+  flex-direction: column; /* Stacks the links vertically */
+  align-items: flex-end; /* Aligns the links to the right side of the navbar */
+  width: 100%; /* Ensures the links take the full width of the navbar */
+}
+
+.navbar .links a {
+  text-decoration: none; /* Removes underline from the links */
+  padding-right: 1.6vh; /* Adds padding to the right of the links */
+}
+
+.navbar .icons {
+  position: absolute; /* Positions the icons container absolutely within the navbar */
+  bottom: 16vh; /* Positions the icons 16vh from the bottom of the navbar */
+  display: flex; /* Uses flexbox layout for the icons */
+  flex-direction: column; /* Stacks the icons vertically */
+}
+
+.navbar .icons i {
+  font-size: 2vh; /* Set the font size of the icons to 2% of the viewport height */
+  margin: 0.8vh 0; /* Adds vertical space between each icon */
+  cursor: pointer; /* Changes the cursor to a pointer when hovering over icons */
+  padding-left: 1.6vh; /* Adds padding to the left of the icons */
 }
 
 .homepage {
-  display: flex; /* Uses flexbox for layout */
-  align-items: center; /* Aligns items vertically in the center */
-  justify-content: center; /* Centers items vertically */ /* Distributes space between items */
+  display: flex; /* Uses flexbox for layout of the homepage */
+  align-items: center; /* Aligns homepage items vertically in the center */
+  justify-content: center; /* Centers homepage items horizontally */
 }
 
 .photo-links {
-  display: flex; /* Uses flexbox to align the profile image or any content inside horizontally */
+  display: flex; /* Uses flexbox to layout images horizontally */
 }
 
 .photo-links img {
-  width: 24vh; /* Sets the width of the image to 24% of the viewport height */
-  height: 32vw; /* Sets the height of the image to 32% of the viewport width */
-  object-fit: cover; /* 👈 Changed from 'cover' to 'contain' */
-  object-position: top; /* Aligns the image to the top */
-  border-radius: 1vh; /* Rounds the corners of the image */
-  margin: 0.4vh; /* Adds a small margin around the image */
-  transition: width 0.4s ease; /* Smooth transition for width change */
+  width: 24vh; /* Sets the width of the images to 24% of the viewport height */
+  height: 32vw; /* Sets the height of the images to 32% of the viewport width */
+  object-fit: cover; /* Ensures the images cover the area while maintaining aspect ratio */
+  object-position: top; /* Aligns the image to the top of the container */
+  border-radius: 1vh; /* Rounds the corners of the images */
+  margin: 0.4vh; /* Adds a small margin around the images */
+  transition: width 0.4s ease; /* Smoothly transitions the width on hover */
   cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
 }
 
 .photo-links img:hover {
-  width: 64vh; /* Increases the width of the image on hover */
+  width: 64vh; /* Increases the width of the image to 64% of the viewport height on hover */
 }
 
 .hello {
-  margin-left: 2vw; /* Adds left margin to the hello text */
-}
-
-h1 {
-  font-family: "Playwrite MX Guides", cursive; /* Sets a cursive font for h1 elements */
-  font-weight: normal; /* Normal font weight for the h1 text */ /* Off-white color for the h1 text */
-}
-
-h3 {
-  font-family: 'Roboto Flex', sans-serif; /* Sets a modern, flexible sans-serif font for h3 */
-  text-transform: uppercase; /* Converts all h3 text to uppercase */
-}
-
-p {
-  font-family: 'Merriweather', serif; /* Applies the same sans-serif font to paragraph text */
-  color: #c0bfbb; /* Light gray color for paragraph text */
-  font-size: 1.6vh; /* Font size is 1.6% of the viewport height for responsive sizing */
-}
-
-
-/* This woks if the icons are <i> elements */
-@keyframes rotateOnce {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(180deg);
-  }
+  margin-left: 2vw; /* Adds left margin to the "hello" text */
 }
 
 .icons i:hover {
-  color: #eeeee6;
-  animation: rotateOnce 0.6s ease-in-out 1; /* Smooth 1-time rotation */
+  color: #eeeee6; /* Changes the color of the icons on hover */
+  animation: rotateOnce 0.6s ease-in-out 1; /* Rotates the icons once on hover with smooth animation */
 }
