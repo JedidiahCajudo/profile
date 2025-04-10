@@ -12,6 +12,8 @@ h1 {
   font-family: "Playwrite MX Guides", cursive; /* Custom cursive font for h1 elements */
   font-weight: normal; /* Normal font weight for h1 */
   font-size: 8vh; /* Font size is based on the viewport height for responsive sizing */
+  margin: 0 vh;
+  margin-bottom: 1vh;
 }
 
 h3 {
@@ -108,21 +110,26 @@ p, .navbar .links a {
 .hello {
   margin-left: 2vw; /* Adds left margin to the "hello" text */
 }
-.about{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.about .bio {
-  margin-left: 2.4vw;
+.about {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .about img {
-  border-radius: 50%;
   object-fit: cover;
-  width: 40vh;
-  height: 24vw;
+  width: 32vh;
+  height: 16vw;
+  border-radius: 50%;/* Space between the image and the bio */
+}
+
+.bio {
+  margin-left: 8vh;
+}
+.bio h1 {
+  margin-top: 1vh;
 }
 
 .vertical-line {
