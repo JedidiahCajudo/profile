@@ -79,6 +79,15 @@ p, .navbar .links a {
   text-decoration: none; /* Removes underline from the links */
 }
 
+.vertical-line {
+  position: fixed; /* Fixes the line's position on the page */
+  right: 4vh; /* Aligns the line to the right side of the window */
+  bottom: 0; /* Positions the line at the bottom of the window */
+  width: 0.8vh; /* Set the width of the line */
+  height: 6vh; /* Sets the height of the line (adjust to your preference) */
+  background-color: #eeeee6; /* Line color, same as the text */
+}
+
 .homepage {
   display: flex; /* Uses flexbox for layout of the homepage */
   height: 100vh; /* Full height of the viewport */
@@ -132,11 +141,20 @@ p, .navbar .links a {
   margin-top: 1vh;
 }
 
-.vertical-line {
-  position: fixed; /* Fixes the line's position on the page */
-  right: 4vh; /* Aligns the line to the right side of the window */
-  bottom: 0; /* Positions the line at the bottom of the window */
-  width: 0.8vh; /* Set the width of the line */
-  height: 6vh; /* Sets the height of the line (adjust to your preference) */
-  background-color: #eeeee6; /* Line color, same as the text */
+.speaking{
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.speaking .description {
+  margin-left: 8vh;
+}
+
+.speaking iframe {
+  width: 8vh;
+  height: 8vw;
+  max-width: 100%; /* Makes the video responsive */
+  height: auto; /* Maintains the aspect ratio */
 }
