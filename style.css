@@ -4,6 +4,10 @@ body {
   font-family: 'Merriweather', serif; /* Default font for the body text */
 }
 
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
 h1 {
   font-family: "Playwrite MX Guides", cursive; /* Custom cursive font for h1 elements */
   font-weight: normal; /* Normal font weight for h1 */
@@ -17,7 +21,7 @@ h3 {
 
 p, .navbar .links a {
   color: #c0bfbb; /* Light gray color for paragraph text and links */
-  font-size: 2.4vh; /* Font size is based on the viewport height for responsive sizing */
+  font-size: 1.6vh; /* Font size is based on the viewport height for responsive sizing */
   margin: 1.6vh 0; /* Adds vertical space between paragraphs and links */
 }
 
@@ -103,6 +107,22 @@ p, .navbar .links a {
 
 .hello {
   margin-left: 2vw; /* Adds left margin to the "hello" text */
+}
+.about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .bio {
+  margin-left: 2.4vw;
+}
+
+.about img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 40vh;
+  height: 24vw;
 }
 
 .vertical-line {
