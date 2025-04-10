@@ -158,3 +158,15 @@ p, .navbar .links a {
   max-width: 100%; /* Makes the video responsive */
   height: auto; /* Maintains the aspect ratio */
 }
+
+
+.app {
+  display: flex; /* Uses flexbox for layout of the homepage */
+  height: 100vh; /* Full height of the viewport */
+  align-items: center; /* Aligns homepage items vertically in the center */
+  justify-content: center; /* Centers homepage items horizontally */
+}
+
+.app .description {
+  margin-left: 2vw;
+}
