@@ -144,22 +144,46 @@ p, .navbar .links a {
   margin-top: 1vh;
 }
 
-.speaking{
+.speaking {
   display: flex;
-  height: 100vh;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
 }
 
-.speaking .description {
-  margin-left: 8vh;
+.speaking-left iframe {
+  width: 720px;
+  height: 405px;
+  max-width: 100%;
+  border: none;
+  border-radius: 12px;
 }
 
-.speaking iframe {
-  width: 8vh;
-  height: 8vw;
-  max-width: 100%; /* Makes the video responsive */
-  height: auto; /* Maintains the aspect ratio */
+/* Right side */
+.speaking-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 480px;
+}
+
+.demo {
+  display: flex;
+  gap: 1rem;
+}
+
+.demo img {
+  width: 48%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 
