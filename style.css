@@ -102,7 +102,7 @@ html {
 }
 
 .demo img {
-  width: 48%;
+  width: 40%;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
@@ -144,67 +144,101 @@ html {
   filter: grayscale(0%);
 }
 
+/* ============================= */
+/* ✨ Navbar                     */
+/* ============================= */
 
-/* ============================= */
-/* ✨ Navbar    */
-/* ============================= */
 .navbar {
-  position: fixed; /* Fixes the navbar in place */
-  right: 0; /* Positions the navbar on the right side of the screen */
-  width: 8vh; /* Set the width of the navbar to 8% of the viewport height */
-  height: 100vh; /* Full height of the viewport */
-  display: flex; /* Enables flexbox layout for the navbar */
-  flex-direction: column; /* Stacks navbar items (links and icons) vertically */
-  margin-top: 8vh; /* Adds space between the top of the page and the navbar */
+  position: fixed;             /* Keeps the navbar fixed in place as the user scrolls */
+  top: 0;                      /* Aligns the navbar to the top of the page */
+  right: 0;                    /* Aligns the navbar to the right side of the screen */
+  width: 28vh;                 /* Sets the navbar width to 20% of the viewport height */
+  height: 100vh;               /* Makes the navbar the full height of the screen */
+  display: flex;               /* Enables Flexbox for layout */
+  flex-direction: column;      /* Stacks all child elements vertically (top to bottom) */
+  justify-content: space-between; /* Pushes top, middle, and bottom content apart */
+  padding: 4vh 3vh; /* Top/bottom: 4vh, Right/left: now 3vh instead of 1.6vh */
+  box-sizing: border-box;      /* Includes padding in the total width/height */
+  background-color: transparent; /* Transparent background (adjust if needed) */
 }
 
+/* ============================= */
+/* 👋 Greeting Section (Top)     */
+/* ============================= */
+
+.navbar .hello {
+  text-align: right;           /* Aligns text to the right */
+  color: #eeeee6;              /* Sets the text color (light beige) */
+  font-size: 1.2vh;            /* Small font size relative to viewport height */
+  line-height: 1.4;            /* Controls vertical spacing between lines */
+  margin-top: 6vh; /* was 0, give it space from the top */
+}
+
+.navbar .hello h1 {
+  font-size: 4.8vh;            /* Larger font for the heading */
+  margin-bottom: 0.8vh;        /* Space below the heading */
+}
+
+/* ============================= */
+/* 🔗 Navigation Links (Middle)  */
+/* ============================= */
+
 .navbar .links {
-  display: flex; /* Uses flexbox for layout of the links */
-  flex-direction: column; /* Stacks the links vertically */
-  align-items: flex-end; /* Aligns the links to the right side of the navbar */
-  width: 100%; /* Ensures the links take the full width of the navbar */
+  display: flex;               /* Enables flexbox layout for links */
+  flex-direction: column;      /* Stacks links vertically */
+  align-items: flex-end;       /* Aligns all links to the right */
+  margin-top: 2vh;             /* Adds space between hello and links */
+  gap: 1.6vh;                  /* Even spacing between each link */
 }
 
 .navbar .links a {
-  text-decoration: none; /* Removes underline from the links */
-  padding-right: 1.6vh; /* Adds padding to the right of the links */
-  transition: color 0.2s ease; /* Smooth color transition */
+  color: #c0bfbb;              /* Muted beige color for links */
+  font-size: 1.6vh;            /* Font size scales with viewport height */
+  text-decoration: none;       /* Removes underline */
+  padding-right: 0.2vh;        /* Small padding to the right of each link */
+  transition: color 0.2s ease; /* Smooth color transition on hover */
 }
 
 .navbar .links a:hover {
-  color: #5DADE2; /* Changes the link color to a light blue on hover */
+  color: #5DADE2;              /* Light blue color when hovered */
 }
 
+/* ============================= */
+/* 📱 Social Icons (Bottom)      */
+/* ============================= */
+
 .navbar .icons {
-  position: absolute; /* Positions the icons container absolutely within the navbar */
-  bottom: 16vh; /* Positions the icons 16vh from the bottom of the navbar */
-  display: flex; /* Uses flexbox layout for the icons */
-  flex-direction: column; /* Stacks the icons vertically */
-  align-items: center;
-  padding-left: 1.6vh; /* Adds padding to the left of the icons */
+  display: flex;               /* Enables flexbox layout */
+  flex-direction: column;      /* Stacks icons vertically */
+  align-items: flex-end;       /* Aligns icons to the right */
+  gap: 0.8vh;                  /* Vertical space between each icon */
+  margin-bottom: 6vh; /* brings it up from the bottom */
+}
+
+.navbar .icons a {
+  color: inherit;              /* Inherits color from the parent (useful for hover effects) */
+  text-decoration: none;       /* No underlines on icons */
 }
 
 .navbar .icons i {
-  font-size: 3.2vh; /* Set the font size of the icons to 2% of the viewport height */
-  margin: 0.8vh 0; /* Adds vertical space between each icon */
-  cursor: pointer; /* Changes the cursor to a pointer when hovering over icons */
-  transition: color 0.3s ease; /* Smooth color transition */
+  font-size: 3.2vh;            /* Icon size responsive to screen height */
+  cursor: pointer;             /* Cursor becomes a pointer on hover */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .navbar .icons i:hover {
-  color: #5DADE2; /* Changes the icon color to a light blue on hover */
+  color: #5DADE2;              /* Highlight color on hover */
 }
 
-.icons a {
-  color: inherit; /* Inherits the color from the parent element */
-  text-decoration: none; /* Removes underline from the links */
-}
+/* ============================= */
+/* 🧵 Decorative Vertical Line   */
+/* ============================= */
 
 .vertical-line {
-  position: fixed; /* Fixes the line's position on the page */
-  right: 4vh; /* Aligns the line to the right side of the window */
-  bottom: 0; /* Positions the line at the bottom of the window */
-  width: 0.8vh; /* Set the width of the line */
-  height: 6vh; /* Sets the height of the line (adjust to your preference) */
-  background-color: #eeeee6; /* Line color, same as the text */
+  position: fixed;             /* Stays in place as you scroll */
+  right: 4vh;                  /* Distance from the right edge of the screen */
+  bottom: 0;                   /* Sticks to the bottom of the screen */
+  width: 0.8vh;                /* Thin vertical line */
+  height: 6vh;                 /* Height of the line */
+  background-color: #eeeee6;   /* Same light color as other text */
 }
