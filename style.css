@@ -9,7 +9,7 @@ body {
   padding: 0;
 }
 
-p, .navbar .links a {
+p {
   color: #c0bfbb;
   font-size: 1.6vh;
   margin: 1rem 0;
@@ -32,11 +32,14 @@ html {
   scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
+.main-content {
+  padding-right: 28vh; /* slightly more than navbar width (28vh) */
+}
 
 /* ============================= */
 /* ✨ Layout Containers          */
 /* ============================= */
-.homepage,
+.projects,
 .about,
 .app {
   display: flex;
@@ -152,11 +155,12 @@ html {
   position: fixed;             /* Keeps the navbar fixed in place as the user scrolls */
   top: 0;                      /* Aligns the navbar to the top of the page */
   right: 0;                    /* Aligns the navbar to the right side of the screen */
-  width: 28vh;                 /* Sets the navbar width to 20% of the viewport height */
+  width: 24vh;                 /* Sets the navbar width to 20% of the viewport height */
   height: 100vh;               /* Makes the navbar the full height of the screen */
   display: flex;               /* Enables Flexbox for layout */
   flex-direction: column;      /* Stacks all child elements vertically (top to bottom) */
   justify-content: space-between; /* Pushes top, middle, and bottom content apart */
+  align-items: flex-end;
   padding: 4vh 3vh; /* Top/bottom: 4vh, Right/left: now 3vh instead of 1.6vh */
   box-sizing: border-box;      /* Includes padding in the total width/height */
   background-color: transparent; /* Transparent background (adjust if needed) */
@@ -184,23 +188,17 @@ html {
 /* ============================= */
 
 .navbar .links {
-  display: flex;               /* Enables flexbox layout for links */
-  flex-direction: column;      /* Stacks links vertically */
-  align-items: flex-end;       /* Aligns all links to the right */
-  margin-top: 2vh;             /* Adds space between hello and links */
-  gap: 1.6vh;                  /* Even spacing between each link */
+  display: flex;                /* Enables flexbox layout for links */
+  flex-direction: column;       /* Stacks links vertically */
+  align-items: flex-end;        /* Aligns all links to the right */
+  gap: 4vh;                   /* Even spacing between each link */
 }
 
 .navbar .links a {
-  color: #c0bfbb;              /* Muted beige color for links */
-  font-size: 1.6vh;            /* Font size scales with viewport height */
-  text-decoration: none;       /* Removes underline */
-  padding-right: 0.2vh;        /* Small padding to the right of each link */
-  transition: color 0.2s ease; /* Smooth color transition on hover */
-}
-
-.navbar .links a:hover {
-  color: #5DADE2;              /* Light blue color when hovered */
+  color: #5DADE2;               /* Text color */
+  font-size: 1.6vh;
+  text-decoration: none;
+  border-radius: 1rem;
 }
 
 /* ============================= */
@@ -210,8 +208,8 @@ html {
 .navbar .icons {
   display: flex;               /* Enables flexbox layout */
   flex-direction: column;      /* Stacks icons vertically */
-  align-items: flex-end;       /* Aligns icons to the right */
-  gap: 0.8vh;                  /* Vertical space between each icon */
+  align-items: center;       /* Aligns icons to the right */
+  gap: 2.4vh;                  /* Vertical space between each icon */
   margin-bottom: 6vh; /* brings it up from the bottom */
 }
 
