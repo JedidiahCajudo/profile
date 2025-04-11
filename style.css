@@ -1,156 +1,87 @@
+/* ============================= */
+/* ✨ Base Typography + Elements */
+/* ============================= */
 body {
-  background-color: #333333; /* Dark gray background for the entire page */
-  color: #eeeee6; /* Light gray text color for the body */
-  font-family: 'Merriweather', serif; /* Default font for the body text */
+  background-color: #333333;
+  color: #eeeee6;
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #c0bfbb;
+  font-size: 1.6vh;
+  margin: 1rem 0;
+}
+
+h1 {
+  font-family: "Playwrite MX Guides", cursive;
+  font-weight: normal;
+  font-size: 8vh;
+  margin: 0 0 1rem 0;
+}
+
+h3 {
+  font-family: 'Roboto Flex', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 html {
   scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
-h1 {
-  font-family: "Playwrite MX Guides", cursive; /* Custom cursive font for h1 elements */
-  font-weight: normal; /* Normal font weight for h1 */
-  font-size: 8vh; /* Font size is based on the viewport height for responsive sizing */
-  margin: 0 vh;
-  margin-bottom: 1vh;
+.main-content {
+  padding-right: 28vh; /* slightly more than navbar width (28vh) */
 }
 
-h3 {
-  font-family: 'Roboto Flex', sans-serif; /* Modern sans-serif font for h3 */
-  text-transform: uppercase; /* Makes h3 text uppercase */
-}
-
-p, .navbar .links a {
-  color: #c0bfbb; /* Light gray color for paragraph text and links */
-  font-size: 1.6vh; /* Font size is based on the viewport height for responsive sizing */
-  margin: 1.6vh 0; /* Adds vertical space between paragraphs and links */
-}
-
-.navbar {
-  position: fixed; /* Fixes the navbar in place */
-  right: 0; /* Positions the navbar on the right side of the screen */
-  width: 8vh; /* Set the width of the navbar to 8% of the viewport height */
-  height: 100vh; /* Full height of the viewport */
-  display: flex; /* Enables flexbox layout for the navbar */
-  flex-direction: column; /* Stacks navbar items (links and icons) vertically */
-  margin-top: 8vh; /* Adds space between the top of the page and the navbar */
-}
-
-.navbar .links {
-  display: flex; /* Uses flexbox for layout of the links */
-  flex-direction: column; /* Stacks the links vertically */
-  align-items: flex-end; /* Aligns the links to the right side of the navbar */
-  width: 100%; /* Ensures the links take the full width of the navbar */
-}
-
-.navbar .links a {
-  text-decoration: none; /* Removes underline from the links */
-  padding-right: 1.6vh; /* Adds padding to the right of the links */
-  transition: color 0.2s ease; /* Smooth color transition */
-}
-
-.navbar .links a:hover {
-  color: #5DADE2; /* Changes the link color to a light blue on hover */
-}
-
-.navbar .icons {
-  position: absolute; /* Positions the icons container absolutely within the navbar */
-  bottom: 16vh; /* Positions the icons 16vh from the bottom of the navbar */
-  display: flex; /* Uses flexbox layout for the icons */
-  flex-direction: column; /* Stacks the icons vertically */
+/* ============================= */
+/* ✨ Layout Containers          */
+/* ============================= */
+.projects,
+.about,
+.app {
+  display: flex;
+  height: 100vh;
   align-items: center;
-  padding-left: 1.6vh; /* Adds padding to the left of the icons */
+  justify-content: center;
+  padding: 2rem;
 }
 
-.navbar .icons i {
-  font-size: 3.2vh; /* Set the font size of the icons to 2% of the viewport height */
-  margin: 0.8vh 0; /* Adds vertical space between each icon */
-  cursor: pointer; /* Changes the cursor to a pointer when hovering over icons */
-  transition: color 0.3s ease; /* Smooth color transition */
-}
-
-.navbar .icons i:hover {
-  color: #5DADE2; /* Changes the icon color to a light blue on hover */
-}
-
-.icons a {
-  color: inherit; /* Inherits the color from the parent element */
-  text-decoration: none; /* Removes underline from the links */
-}
-
-.vertical-line {
-  position: fixed; /* Fixes the line's position on the page */
-  right: 4vh; /* Aligns the line to the right side of the window */
-  bottom: 0; /* Positions the line at the bottom of the window */
-  width: 0.8vh; /* Set the width of the line */
-  height: 6vh; /* Sets the height of the line (adjust to your preference) */
-  background-color: #eeeee6; /* Line color, same as the text */
-}
-
-.homepage {
-  display: flex; /* Uses flexbox for layout of the homepage */
-  height: 100vh; /* Full height of the viewport */
-  align-items: center; /* Aligns homepage items vertically in the center */
-  justify-content: center; /* Centers homepage items horizontally */
-}
-
-.photo-links {
-  display: flex; /* Uses flexbox to layout images horizontally */
-}
-
-.photo-links img {
-  width: 32vh; /* Sets the width of the images to 16% of the viewport height */
-  height: 40vw; /* Sets the height of the images to 40% of the viewport width */
-  object-fit: cover; /* Ensures the images cover the area while maintaining aspect ratio */
-  object-position: top; /* Aligns the image to the top of the container */
-  border-radius: 1vh; /* Rounds the corners of the images */
-  margin: 0.4vh; /* Adds a small margin around the images */
-  transition: width 0.8s ease, filter 1.6s ease, transform 0.8s ease; /* Smoothly transitions the width and filter on hover */
-  cursor: pointer; /* Changes the cursor to a pointer when hovering over the image */
-  filter: grayscale(100%); /* Starts with the image in grayscale */
-}
-
-.photo-links img:hover {
-  width: 72vh; /* Increases the width of the image on hover */
-  filter: grayscale(0%); /* Removes the grayscale on hover */
-}
-
-.hello {
-  margin-left: 2vw; /* Adds left margin to the "hello" text */
-}
-
-.about {
-  display: flex;           /* Aligns children (the image) in a flexible box */
-  height: 100vh;           /* Ensures the container takes the full viewport height */
-  align-items: center;     /* Vertically centers the image */
-  justify-content: center; /* Horizontally centers the image */
-  overflow: hidden;        /* Hides any part of the image that overflows the circle */
-}
-
+/* ============================= */
+/* ✨ About Section              */
+/* ============================= */
 .about img {
-  width: 240px;            /* Fixed width of the image, defining the size of the circle */
-  height: 240px;           /* Fixed height of the image, defining the size of the circle */
-  border-radius: 50%;      /* Makes the image a circle */
-  object-fit: cover;       /* Ensures the image covers the whole circle without distortion */
-  object-position: center; /* Ensures the image is centered within the circle */
-  transform: scale(1.3);   /* Zooms in the image, effectively cropping it */
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.3);
 }
 
+.hello{
+  margin-left: 2rem;
+}
 .bio {
-  margin-left: 8vh;
-}
-.bio h1 {
-  margin-top: 1vh;
+  margin-left: 4rem;
 }
 
+.bio h1 {
+  margin-top: 1rem;
+}
+
+/* ============================= */
+/* ✨ Speaking Section           */
+/* ============================= */
 .speaking {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   gap: 2rem;
-  padding: 2rem;
   flex-wrap: wrap;
+  padding: 2rem;
 }
 
 .speaking-left iframe {
@@ -161,11 +92,10 @@ p, .navbar .links a {
   border-radius: 12px;
 }
 
-/* Right side */
 .speaking-right {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
   max-width: 480px;
 }
 
@@ -175,7 +105,7 @@ p, .navbar .links a {
 }
 
 .demo img {
-  width: 48%;
+  width: 40%;
   height: auto;
   object-fit: cover;
   border-radius: 8px;
@@ -183,17 +113,130 @@ p, .navbar .links a {
 
 .description {
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
-
-.app {
-  display: flex; /* Uses flexbox for layout of the homepage */
-  height: 100vh; /* Full height of the viewport */
-  align-items: center; /* Aligns homepage items vertically in the center */
-  justify-content: center; /* Centers homepage items horizontally */
-}
-
+/* ============================= */
+/* ✨ App Section                */
+/* ============================= */
 .app .description {
-  margin-left: 2vw;
+  margin-left: 2rem;
+}
+
+/* ============================= */
+/* ✨ Photo Links (Homepage)     */
+/* ============================= */
+.photo-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.photo-links img {
+  width: 32vh;
+  height: 40vw;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 1vh;
+  transition: width 0.8s ease, filter 1.6s ease, transform 0.8s ease;
+  cursor: pointer;
+  filter: grayscale(100%);
+}
+
+.photo-links img:hover {
+  width: 72vh;
+  filter: grayscale(0%);
+}
+
+/* ============================= */
+/* ✨ Navbar                     */
+/* ============================= */
+
+.navbar {
+  position: fixed;             /* Keeps the navbar fixed in place as the user scrolls */
+  top: 0;                      /* Aligns the navbar to the top of the page */
+  right: 0;                    /* Aligns the navbar to the right side of the screen */
+  width: 24vh;                 /* Sets the navbar width to 20% of the viewport height */
+  height: 100vh;               /* Makes the navbar the full height of the screen */
+  display: flex;               /* Enables Flexbox for layout */
+  flex-direction: column;      /* Stacks all child elements vertically (top to bottom) */
+  justify-content: space-between; /* Pushes top, middle, and bottom content apart */
+  align-items: flex-end;
+  padding: 4vh 3vh; /* Top/bottom: 4vh, Right/left: now 3vh instead of 1.6vh */
+  box-sizing: border-box;      /* Includes padding in the total width/height */
+  background-color: transparent; /* Transparent background (adjust if needed) */
+}
+
+/* ============================= */
+/* 👋 Greeting Section (Top)     */
+/* ============================= */
+
+.navbar .hello {
+  text-align: right;           /* Aligns text to the right */
+  color: #eeeee6;              /* Sets the text color (light beige) */
+  font-size: 1.2vh;            /* Small font size relative to viewport height */
+  line-height: 1.4;            /* Controls vertical spacing between lines */
+  margin-top: 6vh; /* was 0, give it space from the top */
+}
+
+.navbar .hello h1 {
+  font-size: 4.8vh;            /* Larger font for the heading */
+  margin-bottom: 0.8vh;        /* Space below the heading */
+}
+
+/* ============================= */
+/* 🔗 Navigation Links (Middle)  */
+/* ============================= */
+
+.navbar .links {
+  display: flex;                /* Enables flexbox layout for links */
+  flex-direction: column;       /* Stacks links vertically */
+  align-items: flex-end;        /* Aligns all links to the right */
+  gap: 4vh;                   /* Even spacing between each link */
+}
+
+.navbar .links a {
+  color: #5DADE2;               /* Text color */
+  font-size: 1.6vh;
+  text-decoration: none;
+  border-radius: 1rem;
+}
+
+/* ============================= */
+/* 📱 Social Icons (Bottom)      */
+/* ============================= */
+
+.navbar .icons {
+  display: flex;               /* Enables flexbox layout */
+  flex-direction: column;      /* Stacks icons vertically */
+  align-items: center;       /* Aligns icons to the right */
+  gap: 2.4vh;                  /* Vertical space between each icon */
+  margin-bottom: 6vh; /* brings it up from the bottom */
+}
+
+.navbar .icons a {
+  color: inherit;              /* Inherits color from the parent (useful for hover effects) */
+  text-decoration: none;       /* No underlines on icons */
+}
+
+.navbar .icons i {
+  font-size: 3.2vh;            /* Icon size responsive to screen height */
+  cursor: pointer;             /* Cursor becomes a pointer on hover */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar .icons i:hover {
+  color: #5DADE2;              /* Highlight color on hover */
+}
+
+/* ============================= */
+/* 🧵 Decorative Vertical Line   */
+/* ============================= */
+
+.vertical-line {
+  position: fixed;             /* Stays in place as you scroll */
+  right: 4vh;                  /* Distance from the right edge of the screen */
+  bottom: 0;                   /* Sticks to the bottom of the screen */
+  width: 0.8vh;                /* Thin vertical line */
+  height: 6vh;                 /* Height of the line */
+  background-color: #eeeee6;   /* Same light color as other text */
 }
