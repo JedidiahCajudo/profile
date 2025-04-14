@@ -3,149 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jedidiah Cajudo</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&family=Merriweather:wght@400;700&family=Roboto+Flex:wght@100..900&display=swap" rel="stylesheet" />
-
-    <!-- Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
-
-    <!-- Styles -->
+    <title>Jedidiah Cajudo Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
 
   <body>
-    <!-- Navbar -->
-    <div class="navbar">
-      <div class="hello">
-        <h1>hello</h1>
-        <p>i'm a web developer building things to help businesses get clients</p>
-      </div>
-
-      <div class="links">
-        <a href="#projects"><strong>projects</strong></a>
-        <a href="#about"><strong>about</strong></a>
-        <a href="#speaking"><strong>speaking</strong></a>
-      </div>
-
-      <div class="icons">
-        <a href="https://www.linkedin.com/in/jedidiah-cajudo/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/JedidiahCajudo"><i class="fa-brands fa-github"></i></a>
-        <i class="fa-brands fa-youtube"></i>
-        <i class="fa-brands fa-instagram"></i>
-      </div>
-    </div>
-
-    <div class="vertical-line"></div>
-
-    <div class="main-content">
-
-      <!-- Project Teaser Images -->
-      <div class="projects" id="projects">
-        <div class="photo-links">
-          <a href="#wear"><img src="images/t shirt 236KB.jpg" alt="what do I wear app photo" /></a>
-          <a href="#camera"><img src="images/camera 311 KB.jpg" alt="camera buddy app photo" /></a>
-          <a href="#barber"><img src="images/salon 228KB.jpg" alt="barber booking app photo" /></a>
+    <div class="container">
+      <nav>
+        <div>
+          <h1>Jedidiah Cajudo</h1>
+          <h2>Fullstack web developer</h2>
+          <h3>I solve problems with web applications.</h3>
         </div>
-      </div>
+        <div>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
 
-      <!-- Project: What Do I Wear -->
-      <div class="app" id="wear">
-        <div class="description">
-          <h2>What Do I Wear</h2>
-          <p>AI clothing recognition app</p>
-          <p><strong>instantly</strong> find an outfit from a photo</p>
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-          <i class="fab fa-sass"></i>
-          <i class="fab fa-ruby"></i>
-          <i class="fab fa-gem"></i>
-          <i class="fab fa-js-square"></i>
-          <i class="fa-solid fa-microchip-ai"></i>
-        </div>
-        <div class="photo-links">
-          <img src="images/WWIW PWA.png" alt="show page" />
-          <img src="images/WWIW Show.png" alt="hero page" />
-          <img src="images/WWIW PWA.png" alt="show page again" />
-        </div>
-      </div>
+      <main>
+        <section id="about">
+          <h2>About</h2>
+          <p>I’m a web developer specializing in bringing businesses into the modern era with smooth and responsive web applications. I design the user interface, set up the backend, and deploy it online. I am most passionate about building something that works well and looks appealing.</p>
+          <p>Most recently, I graduated from an intensive bootcamp, LeWagon for fullstack development. Languages I learned were JavaScript, Ruby, SCSS. Libraries I learned were React, Tailwind, Stimulus, Hotwire, Turbo, and Rails. Other tools I learned were GitHub, Heroku, Cloudinary, and Figma.</p>
+          <p>Based in Tokyo, Japan, I’m usually taking photos around the city or getting a ramen or coffee.</p>
+        </section>
 
-      <!-- Project: Camera Buddy -->
-      <div class="app" id="camera">
-        <div class="description">
-          <h2>Camera Buddy</h2>
-          <p>camera rental app</p>
-          <p><strong>easily</strong> borrow or
-          <p>lend out your cameras</p>
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-          <i class="fab fa-sass"></i>
-          <i class="fab fa-ruby"></i>
-          <i class="fab fa-gem"></i>
-          <i class="fab fa-js-square"></i>
-        </div>
-        <div class="photo-links">
-          <img src="images/t shirt 236KB.jpg" alt="placeholder image" />
-          <img src="images/CB front.png" alt="camera buddy front" />
-          <img src="images/salon 228KB.jpg" alt="placeholder image" />
-        </div>
-      </div>
+        <section id="projects">
+          <h2>Projects</h2>
 
-      <!-- Project: Barber Booking -->
-      <div class="app" id="barber">
-        <div class="description">
-          <h2>Barber Booking</h2>
-          <p>Translation and Reservation App</p>
-          <p><strong>communicate</strong> with your barber
-          <p>without Japanese</p>
-          <i class="fab fa-html5"></i>
-          <i class="fab fa-css3-alt"></i>
-          <i class="fab fa-sass"></i>
-          <i class="fab fa-ruby"></i>
-          <i class="fab fa-gem"></i>
-          <i class="fab fa-js-square"></i>
-        </div>
-        <div class="photo-links">
-          <img src="images/t shirt 236KB.jpg" alt="placeholder image" />
-          <img src="images/camera 311 KB.jpg" alt="placeholder image" />
-          <img src="images/salon 228KB.jpg" alt="barber booking" />
-        </div>
-      </div>
-
-      <!-- About Section -->
-      <div class="about" id="about">
-        <img id="portrait" src="images/2025.jpg" alt="dev bootcamp photo" />
-        <div class="bio">
-          <h2>about</h2>
-          <p>hello! I'm Jedidiah, but you can call me <strong>Jed</strong></p>
-          <p>I started in teaching, moved into fitness, and now I'm diving into the world of tech</p>
-          <p>I’ve completed a fullstack web development bootcamp and work with Ruby on Rails</p>
-          <p>I’m passionate about music, love playing Nintendo Switch games</p>
-          <p>Oh, and I can’t start my day without coffee</p>
-        </div>
-      </div>
-
-      <!-- Speaking Section -->
-      <div class="speaking" id="speaking">
-        <div class="speaking-left">
-          <iframe src="https://www.youtube.com/embed/NrkKfqTaq4o?start=877" allowfullscreen></iframe>
-        </div>
-        <div class="speaking-right">
-          <div class="demo">
-            <img src="images/speaking left.jpg" alt="demo audience" class="demo-audience" />
-            <img src="images/speaking right.jpg" alt="demo Jed" class="demo-jed" />
+          <div class="project-card">
+            <h3>What Do I Wear</h3>
+            <p>AI integrated ecommerce app</p>
+            <p>“Snap a pic and find the fit”</p>
+            <p>Web app using OpenAI API to scan a photo and find the products on the web.</p>
+            <p>Built with Ruby on Rails, styled with Bootstrap, Stimulus, and Turbo, database stored with PostgreSQL, Cloudinary, and GitHub, and authenticated with Devise</p>
+            <p class="icons">Ruby, Rails, JavaScript, OpenAI, SCSS, HTML</p>
           </div>
-          <div class="description">
-            <h2>Speaking</h2>
-            <p>LeWagon WebDev Bootcamp Batch #1885</p>
-            <p>Two Week App Sprint</p>
-            <p>OpenAI integration</p>
-            <p>Location: Google for Startups</p>
-            <p>🇯🇵 Tokyo, Japan, March 2025</p>
+
+          <div class="project-card">
+            <h3>Camera Buddy</h3>
+            <p>An Airbnb-style marketplace for renting and lending cameras</p>
+            <p>Why buy a pricey camera for one project when you can rent one? And if you’ve got gear collecting dust, list it and start earning.</p>
+            <p>Built with Ruby on Rails, styled with Bootstrap, Stimulus, and Turbo, database stored with PostgreSQL, Cloudinary, and GitHub, and authenticated with Devise</p>
+            <p class="icons">Ruby, Rails, JavaScript, SCSS, HTML</p>
           </div>
-        </div>
-      </div>
+
+          <div class="project-card">
+            <h3>Barber Booking</h3>
+            <p>Scheduling app with AI chat</p>
+            <p>Save time scheduling, focus on the clients.</p>
+            <p>Web app with a multilingual chatbot and smart booking system for barbershops, featuring real-time AI translation to bridge language gaps.</p>
+            <p>Built with Ruby on Rails, styled with Bootstrap, Stimulus, and Turbo. Database stored with PostgreSQL, images handled with Cloudinary, versioned with GitHub, and secured with Devise.</p>
+            <p class="icons">Ruby, Rails, JavaScript, OpenAI, SCSS, HTML</p>
+          </div>
+
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <p>Let's connect! Feel free to reach out via email or LinkedIn.</p>
+        </section>
+      </main>
     </div>
   </body>
 </html>
