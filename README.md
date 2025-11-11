@@ -1,20 +1,15 @@
-# 🎨 Jedidiah's Portfolio
+# 🎨 Jedidiah Cajudo
 
-Welcome to my personal portfolio!  
-This is where I showcase my projects, experience, and journey as a developer.
+I'm a web developer based in Tokyo, Japan.
 
 ---
 
 ## 🛠️ Projects
-You'll find a collection of the apps and experiments I've built — from full-stack Rails apps to frontend UI concepts. I’m always learning and building!
+I've trained in Ruby on Rails, and I'm teaching myself ReactJS.
 
 ## 📄 Resume
-Check out my experience, skills, and background. You can view or download my resume right from this repo (if included).
-
-## 👋 Thanks for stopping by!
-Feel free to explore, star, or fork. If something catches your eye or you'd like to collaborate, don’t hesitate to reach out.
+I've got an atypical journey as a developer. Check out my resume!
 
 ---
 
-Stay curious,  
 **Jed**
